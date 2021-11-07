@@ -1,4 +1,4 @@
-# MUON
+# MAJESTYK
 Majestyk is a NYC headquartered team of engineers, designers, and entrepreneurs providing creative, analytic, and technical services to help companies achieve their goals through technology. The Majestyk team creates launch-ready MVPs, iterates on existing products, and executes go-to-market strategies for both startups and Fortune 500 compani...
 
 ## Required Features
@@ -19,7 +19,9 @@ To install and run this project you would need to have installed:
 - Node Js
 - Git
 - PHP
-- Clone this repo using `git clone https://github.com/jiokeokwuosa/majestyk-dockerizedApp.git`
+- Clone this repo using `git clone https://github.com/jiokeokwuosa/majestyk-dockerizedApp.git
+- Note1: Please run the backend(server) first before the frontend
+- Note2: The resized images can be found in the directory `storage/app`
 
 To run backend:
 ```
