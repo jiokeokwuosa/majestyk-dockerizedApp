@@ -1,0 +1,67 @@
+version: '3.7'
+services:
+
+    frontend:
+      build:
+        context: ./app-frontend 
+      tty: true
+      ports:
+        - 3000:3000
+      depends_on:
+        - backend
+      networks:
+        - app-network     
+
+    backend:
+      build:
+        context: ./app-backend/
+      restart: unless-stopped
+      environment:
+        MYSQL_DBHOST: appdb
+        MYSQL_DATABASE: majestyk
+        MYSQL_PASSWORD: 
+        MYSQL_USER: root,
+
+      working_dir: /var/www
+      volumes:
+        - ./app-backend:/var/www
+      ports:
+        - 8000:8000
+      depends_on:
+        - appdb
+      networks:
+        - app-network
+        - db
+
+    appdb:
+      image: mysql:5.7
+      restart: unless-stopped
+      environment:
+        MYSQL_DATABASE: 'majestyk'
+        MYSQL_ROOT_PASSWORD: 
+        MYSQL_PASSWORD: 
+        MYSQL_USER: 'root'
+      # volumes:
+      #   - ./initdb:/docker-entrypoint-initdb.d
+      ports:
+        - 3306:3306
+      networks:
+        - db
+
+    phpmyadmin:
+      image: phpmyadmin/phpmyadmin
+      restart: unless-stopped
+      environment:
+        PMA_HOST: appdb
+        MYSQL_ROOT_PASSWORD: 'root'
+      depends_on:
+        - appdb
+      ports:
+        - 8443:80
+      networks:
+        - db
+
+networks:
+  app-network:
+    driver: bridge
+  db:

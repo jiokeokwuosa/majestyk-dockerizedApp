@@ -1,0 +1,54 @@
+#homepageFirstSectionParticles {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to right, #769189, #077c59) !important;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+#homepageSecondSection {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 27%;
+}
+
+#homepageSecondSection .title {
+    color: white;
+    background: #077c59;
+    padding: 16px 3px !important;
+    border-radius: 5px;
+    text-align: center;  
+}
+#homepageSecondSection .container-fluid {     
+    padding-left: 0px !important;   
+}
+#homepageSecondSection .box {
+    background: white;
+    padding: 23px 3px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+#homepageSecondSection p {
+    margin-top: 10px;
+}
+
+#homepageSecondSection .shift {
+    margin-top: 11px;
+    margin-left: 21px;
+}
+
+@media screen and (max-width: 768px) { 
+    #homepageSecondSection {     
+        width: 94%;
+    }
+    #homepageSecondSection .title {
+        padding: 9px 3px !important;        
+    }
+    #homepageSecondSection .box {
+        padding: 4px 3px;      
+    }
+
+}

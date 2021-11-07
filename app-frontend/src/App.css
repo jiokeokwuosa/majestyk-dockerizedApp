@@ -1,0 +1,111 @@
+html,
+body {
+    font-family: monospace !important;  
+}
+
+a {    
+    text-decoration: none;
+    background-color: inherit !important;
+    color:inherit;
+}
+
+a:hover {
+    text-decoration: none !important;
+    color: inherit !important;
+}
+
+input[type='email'],
+input[type='password'],
+input[type='text'],
+select
+{
+    border: solid 1px rgba(73, 73, 73, 0.6);
+    padding: 12px 8px;
+    background: transparent;
+    width: 100%;
+    margin-top: 20px;
+}
+input[type='file']{
+  margin-bottom: 20px;
+}
+input[type='submit'] {
+  width: 37%;
+  padding: 10px 3px;    
+  background: linear-gradient(to right, #2bb58e, #077c59) !important;
+  color: white;
+  margin-top: 20px;
+  border-radius: 5px;
+  border: none;
+}
+.invalid-feedback {
+  margin-top: 7px !important;
+}
+.trendingModalClass .modal-content {
+  padding: 0px;
+  background-color: white;
+  color: #222222;
+}
+.modal-dialog.trendingModalClass {
+  max-width: 367px;
+  margin: 1.75rem auto;
+}
+.trendingModalClass .modal-title {   
+  text-align: center;
+  width: 100%;
+  font-weight: bold;
+}
+.trendingModalClass .modal-header {   
+    color: white !important;
+    background: #077c59;
+    padding: 16px 3px !important;
+    text-align: center;
+}
+
+.trendingModalClass p {
+  padding: 40px;
+}
+.trendingModalClass .modal-footer {
+  padding: 0.4rem 1rem;
+  text-align: center;
+  display: block;
+}
+.trendingModalClass .modal-body {
+  padding: 30px;
+}
+.loading-indicator:after {
+  content: url("./assets/img/loading.gif");
+  position: fixed;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  z-index: 8889;
+  color: white;
+  text-align: center;
+}
+.swal2-styled.swal2-confirm {
+  background-color: #077c59 !important;
+}
+.logoutButton {
+  position: absolute;
+  top: 18px;
+  right: 46px;
+  color: white;
+}
+.logoutButton a{
+  color: white;
+}
+.loading-indicator:before {
+  content: "";
+  background: #000000cc;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 8888;
+}
+@media screen and (max-width: 768px) {  
+  .h3, h3 {
+      font-size: 1.35rem;
+  }
+}
