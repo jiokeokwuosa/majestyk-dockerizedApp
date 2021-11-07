@@ -49,7 +49,11 @@ None
 
 ## Template UI
 
-None
+![Screenshot (347)](https://user-images.githubusercontent.com/33726993/140661387-e237f302-e1df-47ce-9c18-e733afbae5d9.png)
+![Screenshot (348)](https://user-images.githubusercontent.com/33726993/140661391-4b416159-5f26-4d24-9480-182e35a60079.png)
+![Screenshot (349)](https://user-images.githubusercontent.com/33726993/140661392-cd51d66c-f0d8-4f13-ba4f-a3d09fac3934.png)
+![Screenshot (350)](https://user-images.githubusercontent.com/33726993/140661393-6ba213ff-9ef1-4bd8-8cce-a19da3e6bbd6.png)
+
 
 ## API
 
