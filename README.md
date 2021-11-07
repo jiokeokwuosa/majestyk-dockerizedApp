@@ -22,6 +22,7 @@ To install and run this project you would need to have installed:
 - Clone this repo using `git clone https://github.com/jiokeokwuosa/majestyk-dockerizedApp.git
 - Note1: Please run the backend(server) first before the frontend
 - Note2: The resized images can be found in the directory `storage/app`
+- Note3: The frontend listens for the backend at this url `http://127.0.0.1:8000/api/user/`
 
 To run backend:
 ```
