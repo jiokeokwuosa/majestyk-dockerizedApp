@@ -1,0 +1,1 @@
+# majestyk-dockerizedApp
